@@ -1,0 +1,36 @@
+.custom-navbar {
+  height: 80px;
+}
+
+.logo-brand {
+  margin-top: 10px; 
+  margin-bottom: 10px;
+}
+
+.logo-image {
+  max-height: 70px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-icon-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-icon-text {
+  font-size: 14px;
+}
+
+.bg-my-color {
+  background-image: linear-gradient(to right,#d7681f,#f96400 );
+  }
+
+.nav-icon-link.nav-link {
+  margin-right: 10px;
+}

@@ -1,0 +1,18 @@
+.test-result {
+    text-align: center;
+}
+
+.test-result img {
+    width: 100px;
+    height: auto;
+    margin: 20px;
+}
+
+.test-result p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.test-result h4 {
+    margin-bottom: 10px;
+} 

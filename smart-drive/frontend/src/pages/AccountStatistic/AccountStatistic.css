@@ -1,0 +1,21 @@
+.account-statistic table {
+    position: relative;
+    border-collapse: collapse;
+    width: 800px;
+    border: solid 1px black;
+    left: 50%;
+    transform: translateX(-50%);
+}
+  
+.account-statistic td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px 2px;
+}
+
+.account-statistic th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 8px 2px;
+}
+  

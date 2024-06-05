@@ -1,0 +1,18 @@
+#user-nav-dropdown img {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+#user-nav-dropdown button {
+    border-width: 0;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.dropdown-item-text {
+    padding: 8px 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    font-size: large;
+  }

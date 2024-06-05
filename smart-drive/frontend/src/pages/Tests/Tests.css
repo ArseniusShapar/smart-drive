@@ -1,0 +1,17 @@
+main {
+    padding: 20px;
+}
+
+
+.timer {
+    width: 120px;
+    margin-left: 1350px;
+    margin-top: -20px;
+}
+
+.question-bar {
+    position: absolute;
+    left: 0;
+    top: 120px;
+}
+

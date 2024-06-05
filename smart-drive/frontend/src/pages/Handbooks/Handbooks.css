@@ -1,0 +1,32 @@
+footer {
+    margin-top: 800px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section {
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    transition: opacity 0.2s ease-out;
+    pointer-events: all;
+}
+
+.sections li {
+    margin-bottom: 10px;
+  }
+
+.section:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.sections {
+    list-style: none;
+    margin-top: 40px;
+}

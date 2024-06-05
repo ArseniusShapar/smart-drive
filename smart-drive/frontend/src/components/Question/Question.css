@@ -1,0 +1,49 @@
+.variants li button {
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    border-color: lightslategray;
+    border-width: 1px;
+    padding: 10px;
+    margin: 10px;
+    width: 700px;
+    text-align: left;
+}
+
+.variants li button:hover {
+    background-color: rgb(173, 216, 230, 0.2) !important;
+    background-blend-mode: multiply !important;
+}
+
+.variants li button:disabled {
+    pointer-events: none;
+}
+
+.variants {
+    list-style-type: none;
+    padding: 10px;
+    margin-left: -90px;
+}
+
+.question-title {
+    padding-left: 20px;
+}
+
+.q-image {
+    border: 1px solid;
+    border-radius: 5px;
+    width: 95%;
+    max-width: 500px;
+    max-height: 400px;
+    margin-top: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: auto auto; 
+    gap: 0; 
+}
+
+.question {
+    margin-top: 10px;
+}

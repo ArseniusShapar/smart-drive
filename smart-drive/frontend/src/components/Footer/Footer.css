@@ -1,0 +1,34 @@
+#footer-logo {
+    width: 200px;
+    height: auto;
+    float: left;
+    margin-top: 35px;
+}
+
+footer {
+    position: relative;
+    background-color: rgb(3 11 45);
+    color: aliceblue;
+    height: 195px;
+    width: 100%;
+    padding: 10px;
+}
+
+#footer-info {
+    position: relative;
+    text-align: left;
+    margin-left: -400px;
+    bottom: -20px;
+    padding: 10px;
+}
+
+ul li a {
+    color: aliceblue;
+    font-weight: 400;
+    transition: opacity 0.2s ease;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    opacity: 0.5;
+}

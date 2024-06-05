@@ -1,0 +1,26 @@
+.questions-tabs li {
+    display: inline;
+    margin: 5px;
+}
+
+.questions-tabs li button {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    border-width: 1px;
+    border-color: lightslategray;
+}
+
+.questions-tabs li button:disabled {
+    border-width: 2.5px;
+    border-color: black;
+    pointer-events: none;
+}
+
+.questions-tabs li button:hover {
+    background-color: rgb(173, 216, 230, 0.2);
+    background-blend-mode: multiply;
+}

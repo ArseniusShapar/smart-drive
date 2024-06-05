@@ -1,0 +1,56 @@
+.courses main {
+    padding: 20px;
+    display: block;
+    width: 100%;
+    max-width: 1300px; 
+    margin: 0 auto; 
+}
+
+.courses .course {
+    position: relative;
+    padding: 10px 20px 10px 20px;
+    width: 600px;
+    height: 500px;
+    background-color:#f6f7fc;
+    border: solid 1px black;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.courses .course img {
+    position: relative;
+    width: 200px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.course-info {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 400px;
+    margin-left: auto;
+    margin-bottom: auto;
+    align-self: flex-start;
+    top: 0;
+    margin-top: 110px;
+    margin-right: 50px;
+}
+
+.course-info .prop {
+    font-size: 14px;
+    color: dimgray;
+    margin: 0;
+}
+
+.course-info .value {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.courses ul {
+    list-style-type: none;
+    display: flex;
+    gap: 80px;
+    padding: 0;
+}
