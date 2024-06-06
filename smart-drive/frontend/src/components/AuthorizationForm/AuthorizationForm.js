@@ -45,7 +45,6 @@ export default function AuthorizationForm({ handleAuthorization }) {
   const handleInputChange = (e) => {
     e.preventDefault();
 
-
     const { name, value } = e.target;
     setUserData((values) => ({
       ...values,
@@ -64,7 +63,8 @@ export default function AuthorizationForm({ handleAuthorization }) {
     const handleClose = (e) => {
       e.preventDefault()
       document.querySelector('.form-container-login').style.display = 'none';
-      setUserData({ email: '', password: '' })
+      setUserData({ email: '', password: '' });
+      setRegState({submitted: false, end: false, userExist: true, correctPassword: true});
     }
   
     return (

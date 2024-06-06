@@ -64,7 +64,8 @@ export default function RegistrationForm({ handleRegistration }) {
     const handleClose = (e) => {
       e.preventDefault()
       document.querySelector('.form-container-register').style.display = 'none';
-      setUserData({ username: '', email: '', password: '' })
+      setUserData({ username: '', email: '', password: '' });
+      setRegState({submitted: false, end: false, userExist: true, correctPassword: true});
     }
   
     return (

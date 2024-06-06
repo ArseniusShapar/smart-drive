@@ -13,7 +13,7 @@ export default function Tests() {
   const userContext = useUser();
   const [index, setIndex] = useState(1);
   const [answers, setAnswers] = useState([undefined]);
-  const [questions, setQuestions] = useState([0]);
+  const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const getQuestions = async () => {

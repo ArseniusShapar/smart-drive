@@ -18,7 +18,7 @@ questions = None
 
 def connect() -> None:
     global client, db, users, questions
-    uri = 'mongodb://localhost:27017'
+    uri = 'mongodb+srv://Arseniy:Y.4jie..nw6W$2z@cluster0.sjz4xho.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
     client = MongoClient(uri, server_api=ServerApi('1'))
     db = client['smart-drive']
     users = db['users']

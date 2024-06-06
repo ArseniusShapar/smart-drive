@@ -33,7 +33,7 @@
   text-align: center;
 }
 
-.form-field {
+.form-container-register .form-field {
   margin: 10px 0;
   padding: 15px;
   font-size: 16px;
@@ -41,28 +41,28 @@
   font-family: Roboto, sans-serif;
 }
 
-span {
+.form-container-register span {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   color: red;
   margin-bottom: 15px;
 }
 
-input {
+.form-container-register input {
   background: #f2f2f2;
 }
 
-.error {
+.form-container-register .error {
   border: 2px solid #ffa4a4;
 }
 
-button {
+.form-container-register button {
   background: #4caf50;
   color: white;
   cursor: pointer;
 }
 
-button:disabled {
+.form-container-register button:disabled {
   cursor: default;
 }
   

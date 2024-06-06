@@ -67,9 +67,6 @@ def get_user_statistic():
 
     statistic = db.get_user_statistic(email)
 
-    # for test_result in statistic:
-    #     test_result['date'] = test_result['date'].strftime('%d.%m.%Y %H:%M')
-
     return jsonify({'statistic': statistic}), 200
 
 

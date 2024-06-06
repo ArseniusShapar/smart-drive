@@ -11,8 +11,9 @@ import AccountPersonalData from './pages/AccountPersonalData/AccountPersonalData
 import About from './pages/About/About';
 import Contacts from './pages/Contacts/Contacts';
 import Terms from './pages/Handbooks/Chapter1/Terms';
-import Page1 from './pages/Courses/Course1/Page1';
-import Page2 from './pages/Courses/Course1/Page2';
+import С1Page1 from './pages/Courses/Course1/Page1';
+import С1Page2 from './pages/Courses/Course1/Page2';
+import С2Page1 from './pages/Courses/Course2/Page1';
 import './App.css';
 
 
@@ -37,8 +38,9 @@ export default function App() {
                     <Route path='/tests' element={<Tests/>}/>
                     <Route path='/about' element={<About/>}/>
                     <Route path='/contacts' element={<Contacts/>}/>
-                    <Route path='/courses/course-1-page-1' element={<Page1/>}/>
-                    <Route path='/courses/course-1-page-2' element={<Page2/>}/>
+                    <Route path='/courses/course-1-page-1' element={<С1Page1/>}/>
+                    <Route path='/courses/course-1-page-2' element={<С1Page2/>}/>
+                    <Route path='/courses/course-2-page-1' element={<С2Page1/>}/>
                 </Routes>
             </Router>
         </UserProvider>

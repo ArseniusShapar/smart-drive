@@ -1,9 +1,8 @@
-import { React, useEffect, useState } from 'react';
+import { React, useEffect } from 'react';
 import Modal from '../Modal/Modal';
 import './TestResult.css';
 
 export default function TestResult({ user, questions, answers, time }) {
-  const [isSended, setIsSended] = useState(false);
 
   const sendResult = async (testResult) => {
     await fetch('http://127.0.0.1:5000/api/submit-test', {
@@ -13,7 +12,6 @@ export default function TestResult({ user, questions, answers, time }) {
         },
         body: JSON.stringify({ email: user.email, test_result: testResult })
       })
-      .then(() => setIsSended(true))
       .catch(error => console.log(error))
   };
 
@@ -34,13 +32,11 @@ export default function TestResult({ user, questions, answers, time }) {
   };
 
   useEffect(() => {
-    if (!isSended) {
-      const date = new Date();
-      const dateString = date.toLocaleDateString() + ' ' + date.toLocaleTimeString().slice(0, -3);
-      const testResult = { date: dateString, corrects: correctCount(), mistakes: mistakeCount(), time: time, passed: isPassed() };
-      sendResult(testResult);
-    }
-  }, [isSended]);
+    const date = new Date();
+    const dateString = date.toLocaleDateString() + ' ' + date.toLocaleTimeString().slice(0, -3);
+    const testResult = { date: dateString, corrects: correctCount(), mistakes: mistakeCount(), time: time, passed: isPassed() };
+    sendResult(testResult);
+  }, []);
 
   return (
     <Modal>

@@ -47,7 +47,7 @@ export default function AccountStaticstic() {
             <tbody>
               {statistic.map((testResult, index) => 
                 <tr>
-                  <td>{index + 2}</td>
+                  <td>{index + 1}</td>
                   <td>{testResult.date}</td>
                   <td>{testResult.corrects}</td>
                   <td>{testResult.mistakes}</td>

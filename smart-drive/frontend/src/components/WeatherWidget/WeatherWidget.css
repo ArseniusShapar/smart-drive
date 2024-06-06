@@ -1,11 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;0,700;0,900;1,900&display=swap');
+
 .weather-widget {
     position: relative;
     color: black;
     font-size: large;
     border: solid 2px black;
     width: 700px;
-    height: 400px;
+    height: 460px;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 400px;
+    border-collapse: collapse;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.weather-widget .input-block {
+    display: flex;
+    align-items: center;
+}
+
+.weather-widget .widget-title {
+    padding: 15px 20px;
+}
+
+.weather-widget .city-field {
+    width: 330px;
+    height: 30px;
+    border: 0;
+    padding: 10px;
+    border-radius: 0;
+    margin-left: 1px;
+    background: #f2f2f2;
+    margin-left: 10px;
+}
+
+.weather-widget .city-field:focus {
+    border: 0;
+    outline: none;
+}
+
+.weather-widget .get-weather-btn {
+    border: 0;
+    height: 30px;
+    width: 60px;
+    border-radius: 0 4px 4px 0;
+    background-color: #48484a;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 13.5px;
+    line-height: 30px;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    color: rgb(228, 228, 228);
+}
+
+.weather-widget .get-weather-btn:hover {
+    opacity: 0.9;
+}
+
+#city-error {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: red;
+    margin-left: 20px;
+}
+
+.weather-data table {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+}
+
+.weather-data table th {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.weather-data table td {
+    padding: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.weather-data .spinner-border {
+    position: absolute;
+    left: 43%;
+    bottom: 30%;
+    width: 100px;
+    height: 100px;
 }
